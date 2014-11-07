@@ -35,6 +35,7 @@
 (require 'cl)
 (require 'package)
 
+(setq package-check-signature nil)
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/") t)
 ;; set package-user-dir to be relative to Prelude install path
