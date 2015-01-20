@@ -36,7 +36,7 @@
             (t (message "Open with browser canceled"))))))
 ;; (start-process "" nil "xdg-open" buffer-file-name))))
 ;; (shell-command (concat "xdg-open " buffer-file-name)))) ;; this will froze emacs
-(global-set-key "o" (quote open-with))
+(global-set-key (kbd "C-o") 'open-with)
 
 (defun comment-or-uncomment-region-or-line ()
   "Comments or uncomments the region or the current line if there's no active region."
@@ -47,7 +47,7 @@
       (setq beg (line-beginning-position) end (line-end-position)))
     (comment-or-uncomment-region beg end)
     (forward-line 1)))
-(global-set-key "\273" (quote comment-or-uncomment-region-or-line))
+(global-set-key (kbd "M-;") 'comment-or-uncomment-region-or-line)
 
 (autoload 'c-hungry-delete "cc-cmds")
 (global-set-key (quote [C-backspace]) (quote c-hungry-delete))

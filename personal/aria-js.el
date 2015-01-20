@@ -1,4 +1,4 @@
-;;; aria-js.el --- Emacs Prelude: js3-mode configuration.
+;;; aria-js.el --- Emacs Prelude: js3-mode & jsx-mode configuration.
 ;;
 ;; Copyright © 2011-2013 Bozhidar Batsov
 ;;
@@ -40,6 +40,7 @@
 (add-to-list 'auto-mode-alist '("\\.js\\'"    . js3-mode))
 (add-to-list 'auto-mode-alist '("\\.pac\\'"   . js3-mode))
 (add-to-list 'interpreter-mode-alist '("node" . js3-mode))
+(add-to-list 'auto-mode-alist '("\\.jsx\\'"    . jsx-mode))
 
 (eval-after-load 'js3-mode
   '(progn

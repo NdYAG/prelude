@@ -16,4 +16,10 @@
   (aset buffer-display-table ?\^M []))
 (add-hook 'text-mode-hook 'remove-dos-eol)
 
-(require 'iso-transl) ;; fix emacs dead keys
+;; fix emacs dead keys
+(prefer-coding-system 'utf-8)
+(set-default-coding-systems 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+
+(global-diff-hl-mode -1)

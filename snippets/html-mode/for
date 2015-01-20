@@ -1,7 +1,7 @@
 # contributor: Simon Day <simonday@foxmail.com>
-# name: if
-# key: if
+# name: for
+# key: for
 # --
-% if $1:
+% for $1:
   $2
-% endif
+% endfor

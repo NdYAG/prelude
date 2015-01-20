@@ -23,7 +23,7 @@
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 (define-key global-map "\C-cr" 'org-capture)
-(global-set-key [f12] 'org-remember)
+;; (global-set-key [f12] 'org-remember)
 
 ; time
 (setq org-log-done 'time)
