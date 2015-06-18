@@ -22,4 +22,4 @@
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
 
-(global-diff-hl-mode -1)
+;; (global-diff-hl-mode -1)

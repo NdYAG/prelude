@@ -3,7 +3,7 @@
    yasnippet
    deft
    ag
-;;   multiple-cursors
+   multiple-cursors
    ))
 
 
@@ -22,10 +22,10 @@
     (setq deft-text-mode 'org-mode)
     (global-set-key [f8] 'deft)))
 
-;; (eval-after-load 'multiple-cursors-mode
-;;   (progn
-;;     (global-set-key (kbd "C->") 'mc/mark-next-like-this)
-;;     (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
-;;     (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)))
+(eval-after-load 'multiple-cursors-mode
+  (progn
+    (global-set-key (kbd "C->") 'mc/mark-next-like-this)
+    (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+    (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)))
 
 (require 'image-dimensions-minor-mode)
