@@ -23,3 +23,9 @@
 (set-keyboard-coding-system 'utf-8)
 
 ;; (global-diff-hl-mode -1)
+
+;; cua-selection-mode
+;; (cua-selection-mode t)
+
+;; remove editorconfig hook
+(remove-hook 'find-file-hook 'edconf-find-file-hook)

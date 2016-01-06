@@ -1,0 +1,5 @@
+# contributor: Simon Day <simonday@foxmail.com>
+# name: link
+# key: link
+# --
+<link href="$1" rel="stylesheet">

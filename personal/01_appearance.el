@@ -6,6 +6,10 @@
 
 (set-face-attribute 'default nil :height 200)
 (set-frame-font "Inconsolata")
+(dolist (charset '(kana han symbol cjk-misc bopomofo))
+  (set-fontset-font (frame-parameter nil 'font)
+                    charset
+                    (font-spec :family "PingFang SC" :size 18)))
 
 (column-number-mode t)
 ;;; customize linum-mode for base16-ocean-dark
